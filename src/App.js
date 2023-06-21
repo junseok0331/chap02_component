@@ -1,24 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './component/Hello';
+import styles from './App.module.css';
+import EventTest from './component/EventTest';
+import StateTest from './component/StateTest';
+import UseEffectTest from './component/UseEffectTest';
+import Counter from './component/Counter';
+import Props1 from './component/Props1';
+import PropsParent from './component/PropsParent';
 
+
+
+
+// export default function App() 는 한줄로 쓸 수 있다.
+// 루트 컴포넌트
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.box}>
+     <h1>App</h1>
+     <Hello />
+     
+     <br/><br/>
+     <EventTest/>
+
+     <br/><br/>
+     <StateTest/>
+
+     <br/><br/>
+    <UseEffectTest />
+
+    <br/><br/>
+    <Counter />
+
+    <br/><br/>
+    <Props1 subject="자바" />
+
+    <br/><br/>
+    <PropsParent />
+
     </div>
+
+    
   );
 }
 
