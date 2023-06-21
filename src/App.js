@@ -7,6 +7,11 @@ import UseEffectTest from './component/UseEffectTest';
 import Counter from './component/Counter';
 import Props1 from './component/Props1';
 import PropsParent from './component/PropsParent';
+import LoginRendering from './component/LoginRendering';
+import ListExample from './component/ListExample';
+import FormExample from './component/FormExample';
+import FormExample2 from './component/FormExample2';
+import UserForm from './component/UserForm';
 
 
 
@@ -36,6 +41,21 @@ function App() {
 
     <br/><br/>
     <PropsParent />
+    <br/><br/>
+    <LoginRendering />
+
+    <br/><br/>
+    <ListExample />
+
+    <br/><br/>
+    <FormExample />
+
+    <br/><br/>
+    <FormExample2 />
+
+    <br/><br/>
+    <UserForm />
+
 
     </div>
 
